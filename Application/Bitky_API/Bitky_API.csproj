@@ -11,6 +11,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.15" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.1.4" />
+    <PackageReference Include="Dapper" Version="2.1.28" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +23,7 @@
     <None Remove="DTOs\" />
     <None Remove="Repositories\" />
     <None Remove="DTOs\PlantDTOs\" />
+    <None Remove="Repositories\PlantRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -28,5 +32,6 @@
     <Folder Include="DTOs\" />
     <Folder Include="Repositories\" />
     <Folder Include="DTOs\PlantDTOs\" />
+    <Folder Include="Repositories\PlantRepository\" />
   </ItemGroup>
 </Project>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Bitky/Bitky_API/Bitky_API.csproj": {}
+    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_API/Bitky_API.csproj": {}
   },
   "projects": {
-    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Bitky/Bitky_API/Bitky_API.csproj": {
+    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_API/Bitky_API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Bitky/Bitky_API/Bitky_API.csproj",
+        "projectUniqueName": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_API/Bitky_API.csproj",
         "projectName": "Bitky_API",
-        "projectPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Bitky/Bitky_API/Bitky_API.csproj",
+        "projectPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_API/Bitky_API.csproj",
         "packagesPath": "/Users/yigitkatircioglu/.nuget/packages/",
-        "outputPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Bitky/Bitky_API/obj/",
+        "outputPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/yigitkatircioglu/.nuget/NuGet/NuGet.Config"
@@ -40,9 +40,21 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.28, )"
+            },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.15, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.4, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

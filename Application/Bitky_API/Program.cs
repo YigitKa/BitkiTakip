@@ -1,6 +1,14 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Bitky_API.Models.DapperContext;
+using Bitky_API.Repositories.PlantRepository;
+
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+// Context register
+builder.Services.AddTransient<Context>();
+
+// Bitkiler servisi register
+builder.Services.AddTransient<IPlantRepository, PlantRepository>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{2CC1374A-9397-449E-AD14-ED7FDF551458}|https">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../../../../../usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets">
+    <Files>
+      <File FileName="Bitky_API/Repositories/PlantRepository/PlantRepository.cs" Line="40" Column="44" />
+      <File FileName="Bitky_API/Models/DapperContext/Context.cs" />
+      <File FileName="Bitky_API/Program.cs" Line="24" Column="24" />
+      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="151" Column="49" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Bitky" expanded="True">
+            <Node name="Bitky_API" expanded="True" selected="True">
+              <Node name="Repositories" expanded="True">
+                <Node name="PlantRepository" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Bitky__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
