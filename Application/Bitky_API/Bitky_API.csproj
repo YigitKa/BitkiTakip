@@ -33,6 +33,15 @@
     <None Remove="DTOs\FamilyDTOs\" />
     <None Remove="DTOs\GenusDTOs\" />
     <None Remove="DTOs\SpeciyDTOs\" />
+    <None Remove="Repositories\ClassRepository\" />
+    <None Remove="Repositories\DivisionRepository\" />
+    <None Remove="Repositories\FamilyRepository\" />
+    <None Remove="Repositories\GenusRepository\" />
+    <None Remove="Repositories\KingdomRepository\" />
+    <None Remove="Repositories\OrderRepository\" />
+    <None Remove="Repositories\SpeciyRepository\" />
+    <None Remove="Repositories\SubclassRepository\" />
+    <None Remove="Repositories\SubkingdomRepository\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -51,5 +60,14 @@
     <Folder Include="DTOs\FamilyDTOs\" />
     <Folder Include="DTOs\GenusDTOs\" />
     <Folder Include="DTOs\SpeciyDTOs\" />
+    <Folder Include="Repositories\ClassRepository\" />
+    <Folder Include="Repositories\DivisionRepository\" />
+    <Folder Include="Repositories\FamilyRepository\" />
+    <Folder Include="Repositories\GenusRepository\" />
+    <Folder Include="Repositories\KingdomRepository\" />
+    <Folder Include="Repositories\OrderRepository\" />
+    <Folder Include="Repositories\SpeciyRepository\" />
+    <Folder Include="Repositories\SubclassRepository\" />
+    <Folder Include="Repositories\SubkingdomRepository\" />
   </ItemGroup>
 </Project>
