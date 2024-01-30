@@ -13,6 +13,16 @@ namespace Bitky_API.Repositories.PlantRepository
             _context = context;
 		}
 
+        public bool CreatePlant(CreatePlantDTO createPlantDTO)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool DeletePlant(DeletePlantDTO deletePlantDTO)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<ResultPlantDTO>> GetAllPlantsAsync()
         {
             // TODO: view ya da prosedür yap.
@@ -43,6 +53,11 @@ namespace Bitky_API.Repositories.PlantRepository
                 var values = await con.QueryAsync<ResultPlantDTO>(query);
                 return values.ToList();
             }
+        }
+
+        public bool UpdatePlant(UpdatePlantDTO updatePlantDTO)
+        {
+            throw new NotImplementedException();
         }
     }
 }
