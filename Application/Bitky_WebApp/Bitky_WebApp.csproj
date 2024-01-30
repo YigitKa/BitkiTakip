@@ -14,6 +14,12 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\_HeaderLayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_NavbarLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_ThemeSettingsLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_RightSidebarLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_SidebarLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_MainPanelLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_ScriptLayoutComponentPartial\" />
+    <None Remove="Views\Shared\Components\_FooterLayoutComponentPartial\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\skydash\.git\config" />
@@ -1920,5 +1926,11 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\_HeaderLayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_NavbarLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_ThemeSettingsLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_RightSidebarLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_SidebarLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_MainPanelLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_ScriptLayoutComponentPartial\" />
+    <Folder Include="Views\Shared\Components\_FooterLayoutComponentPartial\" />
   </ItemGroup>
 </Project>
