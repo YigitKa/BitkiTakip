@@ -24,6 +24,15 @@
     <None Remove="Repositories\" />
     <None Remove="DTOs\PlantDTOs\" />
     <None Remove="Repositories\PlantRepository\" />
+    <None Remove="DTOs\KingdomDTOs\" />
+    <None Remove="DTOs\SubkingdomDTOs\" />
+    <None Remove="DTOs\DivisionDTOs\" />
+    <None Remove="DTOs\ClassDTOs\" />
+    <None Remove="DTOs\SubclassDTOs\" />
+    <None Remove="DTOs\OrderDTOs\" />
+    <None Remove="DTOs\FamilyDTOs\" />
+    <None Remove="DTOs\GenusDTOs\" />
+    <None Remove="DTOs\SpeciyDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -33,5 +42,14 @@
     <Folder Include="Repositories\" />
     <Folder Include="DTOs\PlantDTOs\" />
     <Folder Include="Repositories\PlantRepository\" />
+    <Folder Include="DTOs\KingdomDTOs\" />
+    <Folder Include="DTOs\SubkingdomDTOs\" />
+    <Folder Include="DTOs\DivisionDTOs\" />
+    <Folder Include="DTOs\ClassDTOs\" />
+    <Folder Include="DTOs\SubclassDTOs\" />
+    <Folder Include="DTOs\OrderDTOs\" />
+    <Folder Include="DTOs\FamilyDTOs\" />
+    <Folder Include="DTOs\GenusDTOs\" />
+    <Folder Include="DTOs\SpeciyDTOs\" />
   </ItemGroup>
 </Project>

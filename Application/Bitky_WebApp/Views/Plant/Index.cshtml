@@ -14,7 +14,8 @@
                             <table class="display expandable-table" style="width:100%">
                                 <thead>
                                     <tr>
-                                        <th>İsim (Name)</th>
+                                        <th style ="width:50px">İsim (Name)</th>
+                                        <th style ="width:50px">Halk Dili</th>
                                         <th>Alem (Kingdom)</th>
                                         <th>Alt Alem (Subkingdom)</th>
                                         <th>Bölüm (Division)</th>
@@ -31,7 +32,8 @@
                                     @for (int i = 0; i < Model.Count; i++)
                                     {
                                         <tr class=@(i % 2 == 0) : "odd" ? "even">
-                                            <td>@Model[i].NameTr (@Model[i].NameCommon) (@Model[i].NameLat) (@Model[i].NameEn)</td>
+                                            <td>@Model[i].NameTr (@Model[i].NameLat) (@Model[i].NameEn)</td>
+                                            <td>@Model[i].NameCommon</td>
                                             <td>@Model[i].KingdomNameTr</td>
                                             <td>@Model[i].SubkingdomNameTr</td>
                                             <td>@Model[i].DivisionNameTr</td>
