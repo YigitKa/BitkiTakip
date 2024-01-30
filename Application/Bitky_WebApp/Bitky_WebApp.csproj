@@ -20,6 +20,8 @@
     <None Remove="Views\Shared\Components\_MainPanelLayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_ScriptLayoutComponentPartial\" />
     <None Remove="Views\Shared\Components\_FooterLayoutComponentPartial\" />
+    <None Remove="Views\Plant\" />
+    <None Remove="DTOs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\skydash\.git\config" />
@@ -1932,5 +1934,10 @@
     <Folder Include="Views\Shared\Components\_MainPanelLayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_ScriptLayoutComponentPartial\" />
     <Folder Include="Views\Shared\Components\_FooterLayoutComponentPartial\" />
+    <Folder Include="Views\Plant\" />
+    <Folder Include="DTOs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
   </ItemGroup>
 </Project>

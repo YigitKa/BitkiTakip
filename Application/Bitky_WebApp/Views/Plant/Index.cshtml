@@ -1,0 +1,57 @@
+﻿@model List<ResultPlantDTO>
+@{
+    ViewData["Title"] = "Plant";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="row">
+    <div class="col-md-12 grid-margin stretch-card">
+        <div class="card">
+            <div class="card-body">
+                <p class="card-title">Kayıtlı Bitki Listesi</p>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="table-responsive">
+                            <table class="display expandable-table" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>İsim (Name)</th>
+                                        <th>Alem (Kingdom)</th>
+                                        <th>Alt Alem (Subkingdom)</th>
+                                        <th>Bölüm (Division)</th>
+                                        <th>Sınıf (Class)</th>
+                                        <th>Alt Sınıf (Subclass)</th>
+                                        <th>Takım (Order)</th>
+                                        <th>Aile (Family)</th>
+                                        <th>Cins (Genus)</th>
+                                        <th>Tür (Species)</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @for (int i = 0; i < Model.Count; i++)
+                                    {
+                                        <tr class=@(i % 2 == 0) : "odd" ? "even">
+                                            <td>@Model[i].NameTr (@Model[i].NameCommon) (@Model[i].NameLat) (@Model[i].NameEn)</td>
+                                            <td>@Model[i].KingdomNameTr</td>
+                                            <td>@Model[i].SubkingdomNameTr</td>
+                                            <td>@Model[i].DivisionNameTr</td>
+                                            <td>@Model[i].ClassNameTr</td>
+                                            <td>@Model[i].SubclassNameTr</td>
+                                            <td>@Model[i].OrderNameTr</td>
+                                            <td>@Model[i].FamilyNameTr</td>
+                                            <td>@Model[i].GenusNameTr</td>
+                                            <td>@Model[i].SpeciyNameTr</td>
+                                            <td class=" details-control"></td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

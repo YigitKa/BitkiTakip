@@ -1,33 +1,11 @@
 ﻿using System;
-namespace Bitky_API.DTOs.PlantDTOs
+
+namespace Bitky_WebApp.DTOs
 {
-    /*
-     * TODO: Silmeyi unutma
-	[KingdomID]    INT NOT NULL,
-    [SubkingdomID] INT NOT NULL,
-    [DivisionID]   INT NOT NULL,
-    [ClassID]      INT NOT NULL,
-    [SubclassID]   INT NOT NULL,
-    [OrderID]      INT NOT NULL,
-    [FamilyID]     INT NOT NULL,
-    [GenusID]      INT NOT NULL,
-    [SpeciesID]    INT NOT NULL,
-
-    Classes.ClassNameEn, Classes.ClassNameLat, Classes.ClassNameTr, 
-        Divisions.DivisionNameEn, Divisions.DivisionNameLat, Divisions.DivisionNameTr, 
-        Families.FamilyNameEn, Families.FamilyNameLat, Families.FamilyNameTr, 
-        Genuses.GenusNameEn, Genuses.GenusNameLat, Genuses.GenusNameTr, 
-        Kingdoms.KingdomNameEn, Kingdoms.KingdomNameLat, KingdomNameTr, 
-        Names.NameCommon,[Names].NameEn, Names.NameLat, [Names].NameTr, 
-        Orders.OrderNameEn, Orders.OrderNameLat, Orders.OrderNameTr, 
-        Species.SpeciyNameEn, Species.SpeciyNameLat, Species.SpeciyNameTr, 
-        Subclasses.SubclassNameEn, Subclasses.SubclassNameLat, Subclasses.SubclassNameTr
-	*/
-
-    public class ResultPlantDTO
+	public class ResultPlantDTO
 	{
-		public int PlantID { get; set; }
-		public int NameID { get; set; }
+        public int PlantID { get; set; }
+        public int NameID { get; set; }
         public int KingdomID { get; set; }
         public int SubkingdomID { get; set; }
         public int DivisionID { get; set; }
@@ -79,5 +57,6 @@ namespace Bitky_API.DTOs.PlantDTOs
         public string SpeciyNameLat { get; set; }
         public string SpeciyNameTr { get; set; }
     }
-}
+    }
+
 
