@@ -8,7 +8,7 @@ namespace Bitky_API.Repositories.DivisionRepository
 		Task<List<ResultDivisionDTO>> GetAllDivisionsAsync();
         bool DeleteDivision(DeleteDivisionDTO deleteDivisionDTO);
         bool UpdateDivision(UpdateDivisionDTO updateDivisionDTO);
-        bool CreateDivision(CreateDivisionDTO createDivision);
+        bool CreateDivision(CreateDivisionDTO createDivisionDTO);
     }
 }
 
