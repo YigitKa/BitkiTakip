@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Bitky_API.DTOs.PlantDTOs;
 using Bitky_API.Repositories.PlantRepository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,10 +20,45 @@ namespace Bitky_API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> CategoryList()
+        public async Task<IActionResult> PlantList()
         {
             var values = await _plantRepository.GetAllPlantsAsync();
             return Ok(values);
+        }
+
+        [HttpDelete]
+        public async Task<IActionResult> DeletePlant([FromBody] DeletePlantDTO deletePlantDTO)
+        {
+            bool result = _plantRepository.DeletePlant(deletePlantDTO);
+            if(!result)
+            {
+                return Problem("Bitki silinirken hata oluştu.");
+            }
+            return Ok();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreatePlant([FromBody] CreatePlantDTO createPlantDTO)
+        {
+            bool result = _plantRepository.CreatePlant(createPlantDTO);
+
+            if (!result)
+            {
+                return Problem("Bitki eklenirken hata oluştu.");
+            }
+            return Ok();
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> UpdatePlant([FromBody] UpdatePlantDTO updatePlantDTO)
+        {
+            bool result = _plantRepository.UpdatePlant(updatePlantDTO);
+
+            if (!result)
+            {
+                return Problem("Bitki eklenirken güncellenirken oluştu.");
+            }
+            return Ok();
         }
     }
 }
