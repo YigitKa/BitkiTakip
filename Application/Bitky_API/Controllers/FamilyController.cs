@@ -12,23 +12,23 @@ namespace Bitky_API.Controllers
 {
     public class FamilyController : Controller
     {
-        private readonly IFamilyRepository _FamilyRepository;
+        private readonly IFamilyRepository _familyRepository;
         public FamilyController(IFamilyRepository FamilyRepository)
         {
-            _FamilyRepository = FamilyRepository;
+            _familyRepository = FamilyRepository;
         }
 
         [HttpGet]
         public async Task<IActionResult> FamilyList()
         {
-            var values = await _FamilyRepository.GetAllFamiliesAsync();
+            var values = await _familyRepository.GetAllFamiliesAsync();
             return Ok(values);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteFamily([FromBody] DeleteFamilyDTO deleteFamilyDTO)
         {
-            bool result = _FamilyRepository.DeleteFamily(deleteFamilyDTO);
+            bool result = _familyRepository.DeleteFamily(deleteFamilyDTO);
             if (!result)
             {
                 return Problem("Aile silinirken hata oluştu.");
@@ -39,7 +39,7 @@ namespace Bitky_API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateFamily([FromBody] CreateFamilyDTO createFamilyDTO)
         {
-            bool result = _FamilyRepository.CreateFamily(createFamilyDTO);
+            bool result = _familyRepository.CreateFamily(createFamilyDTO);
 
             if (!result)
             {
@@ -51,7 +51,7 @@ namespace Bitky_API.Controllers
         [HttpPut]
         public async Task<IActionResult> UpdateFamily([FromBody] UpdateFamilyDTO updateFamilyDTO)
         {
-            bool result = _FamilyRepository.UpdateFamily(updateFamilyDTO);
+            bool result = _familyRepository.UpdateFamily(updateFamilyDTO);
 
             if (!result)
             {
