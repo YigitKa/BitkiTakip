@@ -1,0 +1,50 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/DatabaseProjectdbBitky.sqlproj": {}
+  },
+  "projects": {
+    "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/DatabaseProjectdbBitky.sqlproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/DatabaseProjectdbBitky.sqlproj",
+        "projectName": "DatabaseProjectdbBitky",
+        "projectPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/DatabaseProjectdbBitky.sqlproj",
+        "packagesPath": "/Users/yigitkatircioglu/.nuget/packages/",
+        "outputPath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "/Users/yigitkatircioglu/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net46"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net46": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "noWarn": [
+            "NU5128"
+          ]
+        }
+      },
+      "frameworks": {
+        "net46": {
+          "dependencies": {
+            "Microsoft.NETFramework.ReferenceAssemblies": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          }
+        }
+      }
+    }
+  }
+}

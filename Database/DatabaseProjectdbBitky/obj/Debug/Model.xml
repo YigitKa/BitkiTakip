@@ -1,0 +1,1485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DataSchemaModel FileFormatVersion="1.2" SchemaVersion="2.9" DspName="Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider" CollationLcid="1033" CollationCaseSensitive="False" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+	<Header>
+		<CustomData Category="AnsiNulls">
+			<Metadata Name="AnsiNulls" Value="True" />
+		</CustomData>
+		<CustomData Category="QuotedIdentifier">
+			<Metadata Name="QuotedIdentifier" Value="True" />
+		</CustomData>
+		<CustomData Category="CompatibilityMode">
+			<Metadata Name="CompatibilityMode" Value="160" />
+		</CustomData>
+		<CustomData Category="Reference" Type="Assembly">
+			<Metadata Name="LogicalName" Value="DatabaseProjectdbBitky.dll" />
+			<Metadata Name="FileName" Value="/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/DatabaseProjectdbBitky.dll" />
+			<Metadata Name="AssemblyName" Value="DatabaseProjectdbBitky" />
+			<Metadata Name="PermissionSet" Value="SAFE" />
+			<Metadata Name="Owner" Value="" />
+			<Metadata Name="GenerateSqlClrDdl" Value="True" />
+			<Metadata Name="IsVisible" Value="True" />
+			<Metadata Name="IsModelAware" Value="True" />
+			<Metadata Name="SkipCreationIfEmpty" Value="True" />
+			<Metadata Name="AssemblySymbolsName" Value="/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/DatabaseProjectdbBitky.pdb" />
+		</CustomData>
+		<CustomData Category="SqlCmdVariables" Type="SqlCmdVariable" />
+	</Header>
+	<Model>
+		<Element Type="SqlDatabaseOptions">
+			<Property Name="Collation" Value="SQL_Latin1_General_CP1_CI_AS" />
+			<Property Name="IsAnsiNullDefaultOn" Value="True" />
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Property Name="IsAnsiWarningsOn" Value="True" />
+			<Property Name="IsArithAbortOn" Value="True" />
+			<Property Name="IsConcatNullYieldsNullOn" Value="True" />
+			<Property Name="IsTornPageProtectionOn" Value="False" />
+			<Property Name="IsFullTextEnabled" Value="True" />
+			<Property Name="PageVerifyMode" Value="3" />
+			<Property Name="DefaultLanguage" Value="" />
+			<Property Name="DefaultFullTextLanguage" Value="" />
+			<Property Name="QueryStoreStaleQueryThreshold" Value="367" />
+			<Relationship Name="DefaultFilegroup">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[PRIMARY]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Classes]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Classes].[ClassID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Classes].[ClassNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Classes].[ClassNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Classes].[ClassNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="3" />
+		</Element>
+		<Element Type="SqlDefaultConstraint" Name="[dbo].[DEFAULT_Users_RegisterDate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Users]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Users].[RegisterDate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlDefaultConstraint" Name="[dbo].[DEFAULT_Users_UpdateDate]">
+			<Property Name="DefaultExpressionScript">
+				<Value><![CDATA[(getdate())]]></Value>
+			</Property>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Users]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForColumn">
+				<Entry>
+					<References Name="[dbo].[Users].[UpdateDate]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Divisions]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Divisions].[DivisionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Divisions].[DivisionNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Divisions].[DivisionNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Divisions].[DivisionNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="4" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Families]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Families].[FamilyID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Families].[FamilyNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Families].[FamilyNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Families].[FamilyNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="5" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Plants_Classes]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Plants].[ClassID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Plants]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Classes].[ClassID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Classes]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="6" />
+		</Element>
+		<Element Type="SqlForeignKeyConstraint" Name="[dbo].[FK_Plants_Kingdoms]">
+			<Relationship Name="Columns">
+				<Entry>
+					<References Name="[dbo].[Plants].[KingdomID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Plants]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignColumns">
+				<Entry>
+					<References Name="[dbo].[Kingdoms].[KingdomID]" />
+				</Entry>
+			</Relationship>
+			<Relationship Name="ForeignTable">
+				<Entry>
+					<References Name="[dbo].[Kingdoms]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="7" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Genuses]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Genuses].[GenusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Genuses].[GenusNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Genuses].[GenusNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Genuses].[GenusNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="8" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Kingdoms]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Kingdoms].[KingdomID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Kingdoms].[KingdomNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Kingdoms].[KingdomNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Kingdoms].[KingdomNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="9" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Names]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Names].[NameID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Names].[NameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Names].[NameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Names].[NameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Names].[NameCommon]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="10" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Orders]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Orders].[OrderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Orders].[OrderNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Orders].[OrderNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Orders].[OrderNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="11" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Classes]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Classes].[ClassID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Classes]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="3" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Divisions]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Divisions].[DivisionID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Divisions]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="4" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Families]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Families].[FamilyID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Families]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="5" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Genuses]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Genuses].[GenusID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Genuses]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="8" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Kingdoms]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Kingdoms].[KingdomID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Kingdoms]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="9" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Names]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Names].[NameID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Names]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="10" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Orders]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Orders].[OrderID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Orders]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="11" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_PlantPhotos]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[PlantPhotos].[PhotoID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[PlantPhotos]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Plants]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Plants].[PlantID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Plants]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="12" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Species]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Species].[SpeciyID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Species]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="13" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Subclasses]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Subclasses].[SubclassID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Subclasses]" />
+				</Entry>
+			</Relationship>
+			<Annotation Type="SqlInlineConstraintAnnotation" Disambiguator="14" />
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Subkingdoms]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Subkingdoms].[SubkingdomID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Subkingdoms]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlPrimaryKeyConstraint" Name="[dbo].[PK_Users]">
+			<Relationship Name="ColumnSpecifications">
+				<Entry>
+					<Element Type="SqlIndexedColumnSpecification">
+						<Relationship Name="Column">
+							<Entry>
+								<References Name="[dbo].[Users].[UserID]" />
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="DefiningTable">
+				<Entry>
+					<References Name="[dbo].[Users]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[PlantPhotos]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[PlantPhotos].[PhotoID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[PlantPhotos].[PlantID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[PlantPhotos].[PhotoPath]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="250" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Plants]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[PlantID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[NameID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[KingdomID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[SubkingdomID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[DivisionID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[ClassID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[SubclassID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[OrderID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[FamilyID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[GenusID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Plants].[SpeciesID]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="12" />
+			<AttachedAnnotation Disambiguator="6" />
+			<AttachedAnnotation Disambiguator="7" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Species]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Species].[SpeciyID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Species].[SpeciyNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Species].[SpeciyNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Species].[SpeciyNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="13" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Subclasses]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subclasses].[SubclassID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subclasses].[SubclassNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subclasses].[SubclassNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subclasses].[SubclassNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+			<AttachedAnnotation Disambiguator="14" />
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Subkingdoms]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subkingdoms].[SubkingdomID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subkingdoms].[SubkingdomNameLat]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subkingdoms].[SubkingdomNameTr]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Subkingdoms].[SubkingdomNameEn]">
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+		<Element Type="SqlTable" Name="[dbo].[Users]">
+			<Property Name="IsAnsiNullsOn" Value="True" />
+			<Relationship Name="Columns">
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Users].[UserID]">
+						<Property Name="IsNullable" Value="False" />
+						<Property Name="IsIdentity" Value="True" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Users].[Username]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Property Name="Length" Value="100" />
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[nvarchar]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Users].[RegisterType]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[int]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Users].[RegisterDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+				<Entry>
+					<Element Type="SqlSimpleColumn" Name="[dbo].[Users].[UpdateDate]">
+						<Property Name="IsNullable" Value="False" />
+						<Relationship Name="TypeSpecifier">
+							<Entry>
+								<Element Type="SqlTypeSpecifier">
+									<Relationship Name="Type">
+										<Entry>
+											<References ExternalSource="BuiltIns" Name="[datetime]" />
+										</Entry>
+									</Relationship>
+								</Element>
+							</Entry>
+						</Relationship>
+					</Element>
+				</Entry>
+			</Relationship>
+			<Relationship Name="Schema">
+				<Entry>
+					<References ExternalSource="BuiltIns" Name="[dbo]" />
+				</Entry>
+			</Relationship>
+		</Element>
+	</Model>
+</DataSchemaModel>

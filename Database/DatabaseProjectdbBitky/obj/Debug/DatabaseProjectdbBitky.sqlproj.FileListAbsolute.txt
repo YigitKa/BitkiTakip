@@ -1,0 +1,9 @@
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/bin/Debug/DatabaseProjectdbBitky.dacpac
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/bin/Debug/DatabaseProjectdbBitky.dll
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/bin/Debug/DatabaseProjectdbBitky.pdb
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/Model.xml
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/refactor.xml
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/postdeploy.sql
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/predeploy.sql
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/DatabaseProjectdbBitky.dll
+/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/obj/Debug/DatabaseProjectdbBitky.pdb

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "8mytVuSz543qJ9y7Ooi3T553Wul+XYyUqR9UJWYan+suCc5akC5bsKFv+VrqJvMnfXgTvuAsCAOni1o+MXp45g==",
+  "success": true,
+  "projectFilePath": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Database/DatabaseProjectdbBitky/DatabaseProjectdbBitky.sqlproj",
+  "expectedPackageFiles": [
+    "/Users/yigitkatircioglu/.nuget/packages/microsoft.netframework.referenceassemblies/1.0.0/microsoft.netframework.referenceassemblies.1.0.0.nupkg.sha512",
+    "/Users/yigitkatircioglu/.nuget/packages/microsoft.netframework.referenceassemblies.net46/1.0.0/microsoft.netframework.referenceassemblies.net46.1.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
