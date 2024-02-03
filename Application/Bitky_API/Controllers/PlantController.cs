@@ -60,6 +60,13 @@ namespace Bitky_API.Controllers
             }
             return Ok();
         }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetPlant(int id)
+        {
+            var value = await _plantRepository.GetPlantPhotos(id);
+            return Ok(value);
+        }
     }
 }
 

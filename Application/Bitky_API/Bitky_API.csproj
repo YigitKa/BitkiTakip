@@ -42,6 +42,7 @@
     <None Remove="Repositories\SpeciyRepository\" />
     <None Remove="Repositories\SubclassRepository\" />
     <None Remove="Repositories\SubkingdomRepository\" />
+    <None Remove="DTOs\PlantPhotoDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -69,5 +70,6 @@
     <Folder Include="Repositories\SpeciyRepository\" />
     <Folder Include="Repositories\SubclassRepository\" />
     <Folder Include="Repositories\SubkingdomRepository\" />
+    <Folder Include="DTOs\PlantPhotoDTOs\" />
   </ItemGroup>
 </Project>

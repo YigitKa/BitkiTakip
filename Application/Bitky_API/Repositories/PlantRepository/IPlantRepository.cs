@@ -9,6 +9,7 @@ namespace Bitky_API.Repositories.PlantRepository
         bool DeletePlant(DeletePlantDTO deletePlantDTO);
         bool UpdatePlant(UpdatePlantDTO updatePlantDTO);
         bool CreatePlant(CreatePlantDTO createPlantDTO);
+        Task<ResultPlantDTO> GetPlantPhotos(int plantID);
     }
 }
 
