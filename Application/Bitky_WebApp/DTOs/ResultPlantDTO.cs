@@ -16,6 +16,23 @@ namespace Bitky_WebApp.DTOs
         public int GenusID { get; set; }
         public int SpeciesID { get; set; }
 
+        public string Tags { get; set; }
+        public string Water { get; set; }
+        public string Fertilize { get; set; }
+        public string Repot { get; set; }
+        public string Overview { get; set; }
+        public bool Toxic { get; set; }
+        public string Type { get; set; }
+        public string MatureSize { get; set; }
+        public string SunExposure { get; set; }
+        public string SoilType { get; set; }
+        public string SoilpH { get; set; }
+        public string BloomTime { get; set; }
+        public string NativeArea { get; set; }
+        public string HowToGrow { get; set; }
+        public string Propagation { get; set; }
+        public string PestsDiseases { get; set; }
+
         public string NameCommon { get; set; }
         public string NameEn { get; set; }
         public string NameLat { get; set; }
