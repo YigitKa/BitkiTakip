@@ -35,7 +35,3 @@ CREATE TABLE [dbo].[Plants] (
 GO
 
 
-ALTER TABLE [dbo].[Plants]
-    ADD CONSTRAINT [DEFAULT_Plants_Toxic] DEFAULT ((0)) FOR [Toxic];
-GO
-
