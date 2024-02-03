@@ -1,29 +1,9 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using System.Xml.Serialization;
+
 namespace Bitky_API.DTOs.PlantDTOs
 {
-    /*
-     * TODO: Silmeyi unutma
-	[KingdomID]    INT NOT NULL,
-    [SubkingdomID] INT NOT NULL,
-    [DivisionID]   INT NOT NULL,
-    [ClassID]      INT NOT NULL,
-    [SubclassID]   INT NOT NULL,
-    [OrderID]      INT NOT NULL,
-    [FamilyID]     INT NOT NULL,
-    [GenusID]      INT NOT NULL,
-    [SpeciesID]    INT NOT NULL,
-
-    Classes.ClassNameEn, Classes.ClassNameLat, Classes.ClassNameTr, 
-        Divisions.DivisionNameEn, Divisions.DivisionNameLat, Divisions.DivisionNameTr, 
-        Families.FamilyNameEn, Families.FamilyNameLat, Families.FamilyNameTr, 
-        Genuses.GenusNameEn, Genuses.GenusNameLat, Genuses.GenusNameTr, 
-        Kingdoms.KingdomNameEn, Kingdoms.KingdomNameLat, KingdomNameTr, 
-        Names.NameCommon,[Names].NameEn, Names.NameLat, [Names].NameTr, 
-        Orders.OrderNameEn, Orders.OrderNameLat, Orders.OrderNameTr, 
-        Species.SpeciyNameEn, Species.SpeciyNameLat, Species.SpeciyNameTr, 
-        Subclasses.SubclassNameEn, Subclasses.SubclassNameLat, Subclasses.SubclassNameTr
-	*/
-
     public class ResultPlantDTO
 	{
 		public int PlantID { get; set; }
@@ -37,6 +17,23 @@ namespace Bitky_API.DTOs.PlantDTOs
         public int FamilyID { get; set; }
         public int GenusID { get; set; }
         public int SpeciesID { get; set; }
+
+        public string Tags { get; set; }
+        public string Water { get; set; }
+        public string Fertilize { get; set; }
+        public string Repot { get; set; }
+        public string Overview { get; set; }
+        public bool Toxic { get; set; }
+        public string Type { get; set; }
+        public string MatureSize { get; set; }
+        public string SunExposure { get; set; }
+        public string SoilType { get; set; }
+        public string SoilpH { get; set; }
+        public string BloomTime { get; set; }
+        public string NativeArea { get; set; }
+        public string HowToGrow { get; set; }
+        public string Propagation { get; set; }
+        public string PestsDiseases { get; set; }
 
         public string NameCommon { get; set; }
         public string NameEn { get; set; }
