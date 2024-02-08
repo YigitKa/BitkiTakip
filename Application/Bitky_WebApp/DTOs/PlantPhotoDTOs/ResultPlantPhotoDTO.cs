@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Bitky_API.DTOs.PlantPhotoDTOs
+namespace Bitky_WebApp.DTOs.PlantPhotoDTOs
 {
 	public class ResultPlantPhotoDTO
 	{

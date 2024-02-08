@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6+oc90V+/7Iqx+7xvOrd/4XR6Ab48zQ12mHk/5Mzf4k=",
+  "Hash": "u5wJD5OJXdCePduGJyUJ/O8csanPfTr42CtaIgKkHOc=",
   "Source": "Bitky_WebApp",
   "BasePath": "_content/Bitky_WebApp",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_WebApp/obj/Debug/net7.0/scopedcss/projectbundle/Bitky_WebApp.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_WebApp/wwwroot/.DS_Store",
+      "SourceId": "Bitky_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_WebApp/wwwroot/",
+      "BasePath": "_content/Bitky_WebApp",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
     },
     {
       "Identity": "/Users/yigitkatircioglu/Documents/GitHub/Bitky/Application/Bitky_WebApp/wwwroot/css/site.css",

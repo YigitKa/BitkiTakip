@@ -52,6 +52,11 @@ namespace Bitky_API.Repositories.PlantRepository
         {
             throw new NotImplementedException();
         }
+
+        Task<ResultPlantDTO> IPlantRepository.GetPlantPhotos(int plantID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
 

@@ -1,30 +1,28 @@
 ﻿<Properties StartupConfiguration="{82904275-B055-41A5-BAC0-1A7C53FD3ED3}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Bitky_API/Controllers/PlantController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Bitky__WebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Bitky_WebApp/Controllers/PlantController.cs">
     <Files>
-      <File FileName="Bitky_API/Repositories/PlantRepository/PlantRepository.cs" Line="39" Column="20" />
-      <File FileName="Bitky_API/Models/DapperContext/Context.cs" Line="2" Column="19" />
-      <File FileName="Bitky_API/Program.cs" Line="4" Column="1" />
-      <File FileName="../../../../../../usr/local/share/dotnet/sdk/7.0.312/Sdks/Microsoft.NET.Sdk/targets/Microsoft.NET.TargetFrameworkInference.targets" Line="151" Column="49" />
-      <File FileName="Bitky_API/appsettings.json" Line="8" Column="34" />
-      <File FileName="Bitky_API/Controllers/PlantController.cs" Line="19" Column="10" />
-      <File FileName="Bitky_API/Properties/launchSettings.json" Line="6" Column="20" />
-      <File FileName="Bitky_API/appsettings.Development.json" Line="1" Column="1" />
-      <File FileName="Bitky_API/Repositories/PlantRepository/IPlantRepository.cs" Line="1" Column="1" />
+      <File FileName="Bitky_WebApp/DTOs/ResultPlantDTO.cs" Line="2" Column="1" />
+      <File FileName="Bitky_WebApp/Controllers/PlantController.cs" Line="26" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Bitky" expanded="True">
-            <Node name="Bitky_API" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True">
-                <Node name="DapperContext" expanded="True" />
+            <Node name="Bitky_API">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Repositories" expanded="True">
-                <Node name="PlantRepository" expanded="True" />
+            </Node>
+            <Node name="Bitky_WebApp">
+              <Node name="Controllers" expanded="True">
+                <Node name="PlantController.cs" selected="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="DTOs" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Plant" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -32,9 +30,9 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Bitky__API PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Bitky__WebApp PreferredExecutionTarget="/Applications/Google Chrome.app" FirstBuild="True" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints />
+  <MultiItemStartupConfigurations />
 </Properties>

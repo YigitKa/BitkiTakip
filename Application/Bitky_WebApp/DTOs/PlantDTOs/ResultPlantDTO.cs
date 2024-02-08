@@ -1,11 +1,13 @@
 ﻿using System;
+using Microsoft.AspNetCore.Mvc;
+using System.Xml.Serialization;
 
-namespace Bitky_WebApp.DTOs
+namespace Bitky_WebApp.DTOs.PlantDTOs
 {
-	public class ResultPlantDTO
+    public class ResultPlantDTO
 	{
-        public int PlantID { get; set; }
-        public int NameID { get; set; }
+		public int PlantID { get; set; }
+		public int NameID { get; set; }
         public int KingdomID { get; set; }
         public int SubkingdomID { get; set; }
         public int DivisionID { get; set; }
@@ -74,6 +76,5 @@ namespace Bitky_WebApp.DTOs
         public string SpeciyNameLat { get; set; }
         public string SpeciyNameTr { get; set; }
     }
-    }
-
+}
 

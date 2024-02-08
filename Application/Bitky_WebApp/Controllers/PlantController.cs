@@ -1,4 +1,4 @@
-﻿using Bitky_WebApp.DTOs;
+﻿using Bitky_WebApp.DTOs.PlantDTOs;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
@@ -14,6 +14,7 @@ namespace Bitky_WebApp.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+        [HttpGet]
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
@@ -26,6 +27,21 @@ namespace Bitky_WebApp.Controllers
             }
             return View();
         }
+
+        [HttpGet]
+        public async Task<IActionResult> PlantDetail(int index)
+        {
+            var client = _httpClientFactory.CreateClient();
+            var responseMessage = await client.GetAsync($"https://localhost:7048/api/Plant/{index}");
+            if (responseMessage.IsSuccessStatusCode)
+            {
+                var jsonData = await responseMessage.Content.ReadAsStringAsync();
+                var value = JsonConvert.DeserializeObject<ResultPlantDTO>(jsonData);
+                return View(value);
+            }
+            return View();
+        }
+
     }
 }
 

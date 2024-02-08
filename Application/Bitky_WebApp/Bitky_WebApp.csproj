@@ -22,6 +22,17 @@
     <None Remove="Views\Shared\Components\_FooterLayoutComponentPartial\" />
     <None Remove="Views\Plant\" />
     <None Remove="DTOs\" />
+    <None Remove="DTOs\ClassDTOs\" />
+    <None Remove="DTOs\DivisionDTOs\" />
+    <None Remove="DTOs\FamilyDTOs\" />
+    <None Remove="DTOs\GenusDTOs\" />
+    <None Remove="DTOs\KingdomDTOs\" />
+    <None Remove="DTOs\OrderDTOs\" />
+    <None Remove="DTOs\PlantDTOs\" />
+    <None Remove="DTOs\PlantPhotoDTOs\" />
+    <None Remove="DTOs\SpeciyDTOs\" />
+    <None Remove="DTOs\SubclassDTOs\" />
+    <None Remove="DTOs\SubkingdomDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\skydash\.git\config" />
@@ -1936,6 +1947,17 @@
     <Folder Include="Views\Shared\Components\_FooterLayoutComponentPartial\" />
     <Folder Include="Views\Plant\" />
     <Folder Include="DTOs\" />
+    <Folder Include="DTOs\ClassDTOs\" />
+    <Folder Include="DTOs\DivisionDTOs\" />
+    <Folder Include="DTOs\FamilyDTOs\" />
+    <Folder Include="DTOs\GenusDTOs\" />
+    <Folder Include="DTOs\KingdomDTOs\" />
+    <Folder Include="DTOs\OrderDTOs\" />
+    <Folder Include="DTOs\PlantDTOs\" />
+    <Folder Include="DTOs\PlantPhotoDTOs\" />
+    <Folder Include="DTOs\SpeciyDTOs\" />
+    <Folder Include="DTOs\SubclassDTOs\" />
+    <Folder Include="DTOs\SubkingdomDTOs\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
